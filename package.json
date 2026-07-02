@@ -1,0 +1,28 @@
+{
+  "name": "pamayang-dalubhasaan-marilao-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian-Celon/pamayang-dalubhasaan-marilao-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Brian-Celon/pamayang-dalubhasaan-marilao-web/issues"
+  },
+  "homepage": "https://github.com/Brian-Celon/pamayang-dalubhasaan-marilao-web#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
