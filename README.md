@@ -16,45 +16,23 @@ The application is structured to deliver a robust and comprehensive experience t
 
 ### Public Website
 
-*   **Responsive Homepage:** A dynamic landing page that highlights the latest news, upcoming events, and quick links to academic programs, tailored to adapt to any device screen size.
+*   **Responsive Homepage:** A dynamic landing page that highlights the Vision, Mission, and core objectives, alongside clear calls-to-action for prospective students.
 *   **Navigation Bar:** A sticky, intuitive primary navigation menu providing seamless transitions between pages, featuring a mobile-friendly hamburger menu for smaller screens.
-*   **Hero Section:** An engaging first impression featuring high-quality campus imagery and clear calls-to-action (CTAs) guiding prospective students toward admission procedures.
-*   **School Overview:** High-level information regarding the institution's background, ethos, and community role.
-*   **Mission, Vision & Core Values:** Dedicated sections articulating the guiding principles and long-term objectives of PDM.
-*   **School History:** A detailed, chronological narrative showcasing the establishment, growth, and milestones of the institution.
-*   **Academic Programs:** A dynamically rendered catalog of all degree and certificate programs offered (e.g., BSIT, BSHM, BECED), complete with program durations, descriptions, and iconography.
-*   **Campus Facilities:** Showcases of the physical campus, including libraries, laboratories, and recreational areas.
-*   **Faculty and Administration:** Directories highlighting key academic leaders, administration staff, and esteemed faculty members.
-*   **News & Announcements:** A centralized feed for official school updates, press releases, and urgent announcements.
-*   **Events Calendar:** A comprehensive view of upcoming academic deadlines, extracurricular activities, and community events.
-*   **Image Gallery:** Visual documentation of campus life, student activities, and institutional milestones.
-*   **Contact Information:** A dedicated page featuring physical addresses, telephone numbers, email addresses, and an integrated, validated contact form for direct inquiries.
-*   **Frequently Asked Questions:** A categorized repository of answers to common inquiries regarding admissions, tuition, and school policies.
-*   **Search Functionality:** An integrated search mechanism allowing users to quickly locate specific content across the platform.
-*   **Mobile-Friendly Design:** A mobile-first UI approach ensuring total usability on smartphones and tablets.
-*   **Accessibility Features:** Implementation of ARIA labels, semantic HTML, and high-contrast color schemes to ensure usability for individuals with disabilities.
+*   **Hero Section:** An engaging first impression featuring a striking visual design and clear calls-to-action.
+*   **Mission, Vision & Objectives:** Dedicated sections articulating the guiding principles and long-term goals of PDM.
+*   **School History:** A detailed, chronological narrative showcasing the establishment, milestones, and pioneer leaders of the institution.
+*   **Academic Programs:** A dynamically rendered catalog of all degree and certificate programs offered (e.g., BSIT, BSHM, BECED), served by a backend REST API.
+*   **Admissions & Enrollment:** Comprehensive breakdown of the PDM-CAT entrance exam requirements and enrollment procedures for incoming freshmen, transfer students, and shifters.
+*   **Contact Information:** A dedicated page featuring physical addresses, telephone numbers, and an integrated, validated contact form that submits directly to the backend API.
+*   **Mobile-Friendly Design:** A mobile-first UI approach utilizing Tailwind CSS, ensuring total usability on smartphones and tablets.
+*   **Accessibility Features:** Implementation of semantic HTML and high-contrast color schemes to ensure usability for all visitors.
 
-### Student Features (Future/Planned)
+### Future Expansions (Planned)
 
-*   **Student Portal:** A secure, authenticated dashboard tailored to individual students.
-*   **Profile Management:** Interfaces for updating personal information, emergency contacts, and viewing academic standing.
-*   **Schedule Viewing:** Real-time access to enrolled course schedules, room assignments, and professor details.
-*   **Grades:** Secure viewing of midterm and final grades, as well as unofficial transcripts.
-*   **Announcements:** Targeted notifications from specific departments or enrolled classes.
-*   **Notifications:** Real-time alerts for impending deadlines, grade postings, and schedule changes.
+While the current release serves as the public informational hub, the architecture is designed to support the following expansions:
 
-### Administrator Features (Future/Planned)
-
-*   **Secure Login:** Role-based authentication system with encrypted credential storage.
-*   **Dashboard:** A high-level overview of website metrics, pending inquiries, and recent content updates.
-*   **News Management:** A robust CMS interface for drafting, publishing, and archiving news articles.
-*   **Event Management:** Tools for scheduling, modifying, and deleting campus events.
-*   **Faculty Management:** An interface to update the faculty directory, including office hours and contact details.
-*   **Program Management:** A dynamic tool to add new academic programs or update existing curriculum descriptions.
-*   **Gallery Management:** A media library for uploading and organizing campus imagery.
-*   **User Management:** Administrative controls for creating, suspending, and managing student and faculty accounts.
-*   **Content Management:** Global controls for updating static pages (e.g., History, Mission/Vision) without requiring code deployments.
-*   **Analytics Dashboard:** Visualized data on website traffic, most viewed programs, and contact form submission rates.
+*   **Student Portal:** Authentic dashboards for viewing grades, schedules, and targeted announcements.
+*   **Administrator CMS:** Secure login for school officials to manage news, events, and update academic programs dynamically without code deployments.
 
 ---
 
@@ -75,7 +53,7 @@ The user experience (UX) is engineered for clarity, speed, and accessibility.
 
 From the moment a user lands on the homepage, they are greeted by a bold, visually striking hero section that immediately establishes the school's identity. The navigation flow is deliberately shallow; key information such as Admissions, Programs, and Contact are never more than a single click away. 
 
-Prospective students are guided naturally through a funnel: from discovering the school via the Hero Section, exploring the Academic Programs page, reviewing the Admissions requirements, and finally utilizing the Contact form for direct inquiries.
+Prospective students are guided naturally through a funnel: from discovering the school via the Hero Section, exploring the dynamically loaded Academic Programs page, reviewing the Admissions requirements, and finally utilizing the Contact form for direct inquiries.
 
 Micro-animations (such as scroll-reveals and hover states) provide immediate visual feedback, making the interface feel responsive and alive, while ensuring that the primary focus remains on the content.
 
