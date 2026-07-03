@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions | Pambayang Dalubhasaan ng Marilao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brown: { DEFAULT: '#4e342e', dark: '#3e2723', light: '#5d4037' },
+            maroon: { DEFAULT: '#702621', dark: '#5c1e19', light: '#8a362f' },
+            gold: { DEFAULT: '#fbc02d', dark: '#f9a825', light: '#fff59d' },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="bg-brown-dark fixed w-full top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3 group">
+                <img src="/assets/official-logo.png" alt="PDM Logo" class="w-12 h-12 object-contain group-hover:scale-105 transition" onerror="this.src='/assets/logo.jpg'">
+                <div>
+                    <span class="text-gold font-bold text-lg tracking-wide uppercase">Pambayang Dalubhasaan ng Marilao</span>
+                    <span class="text-gray-300 text-xs block -mt-1 tracking-widest uppercase">Marilao, Bulacan</span>
+                </div>
+            </a>
+
+            <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul id="nav-links" class="nav-links flex items-center space-x-6 text-sm font-semibold tracking-wider text-gray-300 uppercase">
+                <li><a href="/" class="nav-link hover:text-gold transition">About</a></li>
+                <li><a href="/courses.html" class="nav-link hover:text-gold transition">Programs</a></li>
+                <li><a href="/admissions.html" class="nav-link text-white hover:text-gold transition">Admissions</a></li>
+                <li><a href="/history.html" class="nav-link hover:text-gold transition">History</a></li>
+                <li><a href="/contact.html" class="nav-link hover:text-gold transition">Contact</a></li>
+                <li><a href="/admissions.html" class="bg-gold text-brown-dark px-6 py-2 ml-4 font-bold hover:bg-gold-light transition rounded-sm">Enroll Now</a></li>
+            </ul>
+
+            <div id="mobile-overlay" class="hidden mobile-overlay"></div>
+        </div>
+    </nav>
+
+  <!-- Page Hero -->
+  <header class="page-hero pt-32 pb-20 text-center text-white relative">
+    <div class="container mx-auto px-6 relative z-10">
+      <p class="section-subtitle text-gold mb-2 animate-fade-in-up">Join Our Community</p>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4 animate-fade-in-up animate-delay-100">Admissions & Enrollment</h1>
+      <p class="text-lg text-gray-200 max-w-2xl mx-auto animate-fade-in-up animate-delay-200">Everything you need to know to become part of Pambayang Dalubhasaan ng Marilao.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Admission Procedure Section -->
+    <section class="container mx-auto px-6 py-16 reveal">
+      <div class="text-center mb-12">
+        <p class="section-subtitle">Step 1</p>
+        <h2 class="text-3xl md:text-4xl font-serif section-title">Admission Procedure & Requirements</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+
+      <div class="max-w-4xl mx-auto bg-white p-8 md:p-10 rounded-xl shadow-sm border border-gray-100 mb-12">
+        <h3 class="text-2xl font-bold text-brown mb-4 font-serif">Entrance Examination (PDM-CAT)</h3>
+        
+        <div class="space-y-4 text-gray-600 mb-8 leading-relaxed text-justify">
+          <p><span class="font-bold text-maroon mr-2">a.</span> Any senior high school graduate or senior high school candidate for graduation for the current school year is qualified to apply and take the PDM-College Admission Test (CAT).</p>
+          <p><span class="font-bold text-maroon mr-2">b.</span> Application for CAT may be filed personally by the applicant or his/her authorized representative (parents, guardian, relatives, teachers) at the Guidance and Counseling Office.</p>
+          <p><span class="font-bold text-maroon mr-2">c.</span> The examination will be administered by the Guidance Office from <strong>March to May</strong>. No one shall be allowed to take examination beyond this period as successful examinees shall be announced at least one month before the opening of classes.</p>
+          <div class="bg-red-50 border-l-4 border-red-500 p-4 mt-4">
+            <p class="text-red-700 font-medium">Note: Applicants shall be allowed to take the CAT only once.</p>
+          </div>
+        </div>
+
+        <h4 class="text-xl font-bold text-brown mb-4 font-serif">Requirements for Application</h4>
+        <p class="text-gray-600 mb-4">Interested applicants must submit the following requirements:</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-600 mb-8 ml-4">
+          <li>2 pieces 2x2 ID picture</li>
+          <li>Filled-out Application for Entrance Examination Form</li>
+          <li>Certified true copy of grade 11 report card with 2nd grading period grade and <strong>85% GPA for Computer studies</strong> applicants and <strong>80% for other course programs</strong></li>
+          <li>Proof of residence issued by barangay or school authority</li>
+        </ul>
+
+        <div class="bg-brown-light/10 border border-brown-light p-6 rounded-lg text-brown-dark text-center">
+            <p class="font-semibold mb-2 text-lg font-serif">On Examination Day</p>
+            <p>Applicants must present the application stub duly signed by the Admission Officer. <strong>No walk-in examinees will be allowed;</strong> all examinations are pre-scheduled.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment Requirements Section -->
+    <section class="bg-gray-50 border-t border-gray-200 py-16 reveal">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <p class="section-subtitle">Step 2</p>
+          <h2 class="text-3xl md:text-4xl font-serif section-title">Enrollment / Registration Requirements</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="max-w-2xl mx-auto text-gray-600 leading-relaxed text-justify">
+            A student who passed the PDM-CAT shall be issued an Admission Slip through email. Upon verification of eligibility for admission, the student applicant must submit to the Registrar Office the following enrollment requirements based on their applicant type.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Incoming First Year -->
+          <div class="bg-white rounded-xl shadow-md border-t-4 border-maroon overflow-hidden">
+            <div class="p-6 bg-maroon/5 border-b border-gray-100">
+              <h3 class="text-xl font-bold text-maroon font-serif text-center">Incoming First Year</h3>
+            </div>
+            <div class="p-6">
+              <ol class="list-decimal list-outside space-y-3 text-sm text-gray-600 ml-4">
+                <li>Admission Slip issued by Guidance Office</li>
+                <li>Filled-out application form for Admission</li>
+                <li>Original copy of Form 138 (High School Report Card)</li>
+                <li>Certificate of Good Moral Character</li>
+                <li>PSA Certificate of Live Birth (1 original & 2 photocopies)</li>
+                <li>Two (2) pieces 2x2 pictures (white background)</li>
+                <li>Chest X-ray result (not later than 6 months)</li>
+                <li>Marriage contract (for married female applicant)</li>
+                <li>Two long brown envelope (ordinary) one long folder</li>
+                <li>One long window letter envelope with postage stamp</li>
+                <li>Photocopy of parent/guardian's Voter's ID/or any document to prove residency</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Transfer Student -->
+          <div class="bg-white rounded-xl shadow-md border-t-4 border-gold-dark overflow-hidden">
+            <div class="p-6 bg-gold/10 border-b border-gray-100">
+              <h3 class="text-xl font-bold text-brown font-serif text-center">Transfer Student</h3>
+            </div>
+            <div class="p-6">
+                <p class="text-sm text-gray-500 mb-4 italic">An applicant student seeking admission to PDM from another school must submit the following credentials:</p>
+              <ol class="list-[lower-alpha] list-outside space-y-3 text-sm text-gray-600 ml-4">
+                <li>Filled-out Application Form for Admission</li>
+                <li>Admission Slip</li>
+                <li>Honorable Dismissal/Transfer Credential</li>
+                <li>Official copy of grades or Transcript of Records for evaluation</li>
+                <li>Two (2) pieces 2x2 picture (white background)</li>
+                <li>Chest X-ray result (not later than 6 months)</li>
+                <li>Marriage Contract (for married female applicant)</li>
+                <li>Two long brown envelope (ordinary) and one long folder</li>
+                <li>One long window letter envelope with postage stamp</li>
+                <li>Photocopy of parent/guardian's Voter's ID/or any document to prove residency</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Shifters -->
+          <div class="bg-white rounded-xl shadow-md border-t-4 border-brown overflow-hidden h-fit">
+            <div class="p-6 bg-brown/5 border-b border-gray-100">
+              <h3 class="text-xl font-bold text-brown font-serif text-center">Shifters</h3>
+            </div>
+            <div class="p-6">
+                <p class="text-sm text-gray-500 mb-4 italic">A student who wishes to shift from one course to another must submit the following to the Dean / Program Director:</p>
+              <ol class="list-decimal list-outside space-y-3 text-sm text-gray-600 ml-4">
+                <li>Summary of Grades</li>
+                <li>Letter of Intent to transfer/shift noted by the Dean/Program Director</li>
+                <li>Enrollment Clearance</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/assets/official-logo.png" alt="PDM Logo" class="w-10 h-10 object-contain" onerror="this.src='/assets/logo.jpg'">
+                        <span class="text-white font-bold text-lg">PDM</span>
+                    </div>
+                    <p class="text-sm leading-relaxed text-white/60">
+                        Pambayang Dalubhasaan ng Marilao — Where Learning Meets Community Service.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/admissions.html">Admissions</a></li>
+                        <li><a href="/history.html">Our History</a></li>
+                        <li><a href="/courses.html">Programs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Top Programs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/courses.html">BS Information Technology</a></li>
+                        <li><a href="/courses.html">BS Hospitality Management</a></li>
+                        <li><a href="/courses.html">BS Business Administration</a></li>
+                        <li><a href="/courses.html">BS Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>📍 Municipal Compound, Marilao, Bulacan</li>
+                        <li>📞 (044) 123-4567</li>
+                        <li>✉️ info@pdm.edu.ph</li>
+                        <li>🕐 Mon–Fri, 8:00 AM – 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-white/40">© 2026 Pambayang Dalubhasaan ng Marilao. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition" aria-label="Facebook">
+                        <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition" aria-label="Email">
+                        <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
