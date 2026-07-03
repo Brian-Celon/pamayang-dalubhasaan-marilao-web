@@ -3,11 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Pambayang Dalubhasaan ng Marilao | Excellence in Education</title>
+    <meta name="description" content="Pambayang Dalubhasaan ng Marilao (PDM) — A municipal college in Marilao, Bulacan providing accessible, quality higher education.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brown: { DEFAULT: '#4e342e', dark: '#3e2723', light: '#5d4037' },
+              maroon: { DEFAULT: '#702621', dark: '#5c1e19', light: '#8a362f' },
+              gold: { DEFAULT: '#fbc02d', dark: '#f9a825', light: '#fff59d' },
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <h1>Welcome to the Home Page</h1>
-    <p>Our website is offically live</p>
-    
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="bg-brown-dark fixed w-full top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3 group">
+                <img src="/assets/official-logo.png" alt="PDM Logo" class="w-12 h-12 object-contain group-hover:scale-105 transition" onerror="this.src='/assets/logo.jpg'">
+                <div>
+                    <span class="text-gold font-bold text-lg tracking-wide uppercase">Pambayang Dalubhasaan ng Marilao</span>
+                    <span class="text-gray-300 text-xs block -mt-1 tracking-widest uppercase">Marilao, Bulacan</span>
+                </div>
+            </a>
+
+            <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul id="nav-links" class="nav-links flex items-center space-x-6 text-sm font-semibold tracking-wider text-gray-300 uppercase">
+                <li><a href="/" class="nav-link text-white hover:text-gold transition">About</a></li>
+                <li><a href="/courses.html" class="nav-link hover:text-gold transition">Programs</a></li>
+                <li><a href="#" class="nav-link hover:text-gold transition">News</a></li>
+                <li><a href="/contact.html" class="nav-link hover:text-gold transition">Contact</a></li>
+                <li><a href="#" class="bg-gold text-brown-dark px-6 py-2 ml-4 font-bold hover:bg-gold-light transition rounded-sm">Enroll Now</a></li>
+            </ul>
+
+            <div id="mobile-overlay" class="hidden mobile-overlay"></div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <header class="page-hero pt-32 pb-24 md:pt-40 md:pb-32 text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 border border-gold/40 rounded-full px-4 py-1 mb-8">
+                <span class="text-gold text-xs">🎓</span>
+                <span class="text-gold text-xs font-semibold tracking-widest">STATE COLLEGE • ESTABLISHED 2010</span>
+            </div>
+            
+            <img src="/assets/official-logo.png" alt="PDM Logo" class="w-32 h-32 mx-auto mb-6 drop-shadow-xl" onerror="this.src='/assets/logo.jpg'">
+            
+            <p class="text-gray-300 font-semibold text-sm uppercase tracking-widest mb-6 animate-fade-in-up">
+                Pambayang Dalubhasaan ng Marilao
+            </p>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight animate-fade-in-up animate-delay-100">
+                Where <span class="text-gold">Learning</span> Meets<br>
+                Community Service
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-10 animate-fade-in-up animate-delay-200">
+                A public higher education institution committed to providing quality, accessible, and relevant education to the people of Marilao and beyond.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-300">
+                <a href="/courses.html" class="btn btn-gold rounded-sm">
+                    Explore Programs
+                </a>
+                <a href="#vision-mission" class="btn btn-outline-white rounded-sm">
+                    Learn About PDM
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== VISION & MISSION ========== -->
+        <section id="vision-mission" class="container mx-auto px-6 py-16 md:py-20 reveal">
+            <div class="text-center mb-12">
+                <p class="section-subtitle">Our Purpose</p>
+                <h2 class="section-title text-3xl md:text-4xl font-serif">Vision & Mission</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+                <!-- Vision Card -->
+                <div class="card card-accent-gold p-8">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="feature-icon feature-icon-gold">🎯</div>
+                        <h3 class="text-2xl font-bold text-maroon font-serif">Vision</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        The Pambayang Dalubhasaan ng Marilao (PDM), a premier higher educational institution in the region in providing quality subsidized tertiary education and industry training programs committed to produce globally competent, competitive, capable, and skillful graduates who excel in their chosen field.
+                    </p>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="card card-accent-maroon p-8">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="feature-icon feature-icon-maroon">🚀</div>
+                        <h3 class="text-2xl font-bold text-maroon font-serif">Mission</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Cognizant of the importance of contributing to the realization of national development goals and right of every citizen to quality education, PDM commits itself to the provision of quality education, and mold its students into productive and responsible citizens who are imbued with virtues, aware of their national heritage, and proud of their local culture.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Objectives -->
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-sm border border-gray-100 card-accent-brown">
+                <h3 class="text-2xl font-bold text-brown mb-6 font-serif">Objectives</h3>
+                <p class="text-gray-600 mb-6">To achieve this, the college aims to:</p>
+                <ul class="space-y-4 text-gray-600">
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold mt-1">●</span>
+                        <span>Inculcate among students and all stakeholders a culture of excellence by communicating the school vision and mission across all sectors of the college;</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold mt-1">●</span>
+                        <span>Impart knowledge through effective instruction delivered by a core of qualified and competent faculty;</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold mt-1">●</span>
+                        <span>Offer relevant degree and non-degree programs that are responsive to the current needs of local community, society and industry.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold mt-1">●</span>
+                        <span>Install social awareness among all stakeholders through relevant and worthwhile community extension programs;</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold mt-1">●</span>
+                        <span>Nurture talents and skills of students through various social, cultural, and co-curricular activities;</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold mt-1">●</span>
+                        <span>Assist students through provision of support services that will address varied needs and concerns.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========== WHY CHOOSE PDM ========== -->
+        <section class="bg-white py-16 md:py-20 reveal border-t border-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <p class="section-subtitle">Why PDM</p>
+                    <h2 class="section-title text-3xl md:text-4xl font-serif">Why Choose Us</h2>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                    <!-- Feature 1 -->
+                    <div class="card p-6 text-center card-accent-maroon">
+                        <div class="feature-icon feature-icon-maroon mx-auto mb-4">🏆</div>
+                        <h3 class="font-bold text-brown text-lg mb-2">Academic Excellence</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            CHED-recognized programs with dedicated faculty committed to delivering quality education.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="card p-6 text-center card-accent-gold">
+                        <div class="feature-icon feature-icon-gold mx-auto mb-4">💰</div>
+                        <h3 class="font-bold text-brown text-lg mb-2">Subsidized Education</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            As a municipal college, we provide highly accessible and subsidized tertiary education.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="card p-6 text-center card-accent-brown">
+                        <div class="feature-icon feature-icon-brown mx-auto mb-4">🤝</div>
+                        <h3 class="font-bold text-brown text-lg mb-2">Community Service</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Deep ties with the Municipality of Marilao, nurturing civic responsibility and local engagement.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="card p-6 text-center card-accent-maroon">
+                        <div class="feature-icon feature-icon-maroon mx-auto mb-4">🌟</div>
+                        <h3 class="font-bold text-brown text-lg mb-2">Holistic Development</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Molding students into productive citizens imbued with virtues and proud of their heritage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/assets/official-logo.png" alt="PDM Logo" class="w-10 h-10 object-contain" onerror="this.src='/assets/logo.jpg'">
+                        <span class="text-white font-bold text-lg">PDM</span>
+                    </div>
+                    <p class="text-sm leading-relaxed text-white/60">
+                        Pambayang Dalubhasaan ng Marilao — Where Learning Meets Community Service.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/history.html">Our History</a></li>
+                        <li><a href="/courses.html">Programs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Top Programs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/courses.html">BS Information Technology</a></li>
+                        <li><a href="/courses.html">BS Hospitality Management</a></li>
+                        <li><a href="/courses.html">BS Business Administration</a></li>
+                        <li><a href="/courses.html">BS Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>📍 Municipal Compound, Marilao, Bulacan</li>
+                        <li>📞 (044) 123-4567</li>
+                        <li>✉️ info@pdm.edu.ph</li>
+                        <li>🕐 Mon–Fri, 8:00 AM – 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-white/40">© 2026 Pambayang Dalubhasaan ng Marilao. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition" aria-label="Facebook">
+                        <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition" aria-label="Email">
+                        <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>

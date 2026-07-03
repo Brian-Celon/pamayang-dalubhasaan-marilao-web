@@ -1,15 +1,11 @@
 // server/app.js
 const express = require('express');
+const path = require('path');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// Middleware to serve static files (like your HTML, CSS, JS)
-app.use(express.static('public'));
-
-// Basic route to test the server
-app.get('/', (req, res) => {
-    res.send('<h1>School Website Backend is Running!</h1>');
-});
+// Middleware to serve static files (HTML, CSS, JS, images)
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // Start the server
 app.listen(PORT, () => {

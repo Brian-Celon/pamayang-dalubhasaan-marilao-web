@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs | Pambayang Dalubhasaan ng Marilao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brown: { DEFAULT: '#4e342e', dark: '#3e2723', light: '#5d4037' },
+              maroon: { DEFAULT: '#702621', dark: '#5c1e19', light: '#8a362f' },
+              gold: { DEFAULT: '#fbc02d', dark: '#f9a825', light: '#fff59d' },
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="bg-brown-dark fixed w-full top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3 group">
+                <img src="/assets/official-logo.png" alt="PDM Logo" class="w-12 h-12 object-contain group-hover:scale-105 transition" onerror="this.src='/assets/logo.jpg'">
+                <div>
+                    <span class="text-gold font-bold text-lg tracking-wide uppercase">Pambayang Dalubhasaan ng Marilao</span>
+                    <span class="text-gray-300 text-xs block -mt-1 tracking-widest uppercase">Marilao, Bulacan</span>
+                </div>
+            </a>
+
+            <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul id="nav-links" class="nav-links flex items-center space-x-6 text-sm font-semibold tracking-wider text-gray-300 uppercase">
+                <li><a href="/" class="nav-link hover:text-gold transition">About</a></li>
+                <li><a href="/courses.html" class="nav-link text-white hover:text-gold transition">Programs</a></li>
+                <li><a href="#" class="nav-link hover:text-gold transition">News</a></li>
+                <li><a href="/contact.html" class="nav-link hover:text-gold transition">Contact</a></li>
+                <li><a href="#" class="bg-gold text-brown-dark px-6 py-2 ml-4 font-bold hover:bg-gold-light transition rounded-sm">Enroll Now</a></li>
+            </ul>
+
+            <div id="mobile-overlay" class="hidden mobile-overlay"></div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <header class="page-hero pt-32 pb-20 text-center text-white relative">
+      <div class="container mx-auto px-6 relative z-10">
+        <p class="section-subtitle text-gold mb-2 animate-fade-in-up">What We Offer</p>
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4 animate-fade-in-up animate-delay-100">Academic Programs</h1>
+        <p class="text-lg text-gray-200 max-w-2xl mx-auto animate-fade-in-up animate-delay-200">Discover degree programs designed to prepare you for a successful career.</p>
+      </div>
+    </header>
+
+    <main>
+        <!-- ========== PROGRAMS SECTION ========== -->
+        <section class="container mx-auto px-6 py-16 reveal">
+            <div class="text-center mb-12">
+                <p class="section-subtitle">Our Offerings</p>
+                <h2 class="section-title text-3xl md:text-4xl font-serif">Degree Programs</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <!-- Course 1 -->
+                <div class="card card-accent-gold p-6 text-center">
+                    <div class="feature-icon feature-icon-brown mx-auto mb-4">💻</div>
+                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Information Technology</h3>
+                    <div class="course-badge course-badge-years mb-3">BSIT • 4 YEARS</div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Learn software development, networking, cybersecurity, and web development through hands-on real-world projects.
+                    </p>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="card card-accent-maroon p-6 text-center">
+                    <div class="feature-icon feature-icon-maroon mx-auto mb-4">🖥️</div>
+                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Computer Science</h3>
+                    <div class="course-badge course-badge-years mb-3">BSCS • 4 YEARS</div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Deep study of algorithms, artificial intelligence, data structures, and systems programming for advanced computing careers.
+                    </p>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="card card-accent-brown p-6 text-center">
+                    <div class="feature-icon feature-icon-gold mx-auto mb-4">🏨</div>
+                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Hospitality Management</h3>
+                    <div class="course-badge course-badge-years mb-3">BSHM • 4 YEARS</div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Prepares students for the hotel, restaurant, and tourism industry with a strong focus on service excellence and operations.
+                    </p>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="card card-accent-gold p-6 text-center">
+                    <div class="feature-icon feature-icon-brown mx-auto mb-4">✈️</div>
+                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Tourism Management</h3>
+                    <div class="course-badge course-badge-years mb-3">BSTM • 4 YEARS</div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Study travel operations, tour guiding, and sustainable tourism for careers in the local and international tourism industry.
+                    </p>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="card card-accent-maroon p-6 text-center">
+                    <div class="feature-icon feature-icon-maroon mx-auto mb-4">🗂️</div>
+                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Office Administration</h3>
+                    <div class="course-badge course-badge-years mb-3">BSOA • 4 YEARS</div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Training in administrative management, business communication, and office systems for the modern professional workplace.
+                    </p>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="card card-accent-brown p-6 text-center">
+                    <div class="feature-icon feature-icon-gold mx-auto mb-4">👶</div>
+                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">Bachelor of Early Childhood Education</h3>
+                    <div class="course-badge course-badge-years mb-3">BECED • 4 YEARS</div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Develops future teachers for early childhood and elementary levels with a strong foundation in child development and pedagogy.
+                    </p>
+                </div>
+
+                <!-- Course 7 -->
+                <div class="card card-accent-gold p-6 text-center">
+                    <div class="feature-icon feature-icon-brown mx-auto mb-4">🔧</div>
+                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">Bachelor of Technology & Livelihood Education</h3>
+                    <div class="course-badge course-badge-years mb-3">BTLED • 4 YEARS</div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Trains educators to teach technology and livelihood subjects at the secondary level, combining theory with practical skills.
+                    </p>
+                </div>
+
+                <!-- Course 8 -->
+                <div class="card card-accent-maroon p-6 text-center">
+                    <div class="feature-icon feature-icon-maroon mx-auto mb-4">🚀</div>
+                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Entrepreneurship</h3>
+                    <div class="course-badge course-badge-years mb-3">BSENTREP • 4 YEARS</div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Covers business planning, innovation, and enterprise development for students who want to start and grow their own businesses.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ADMISSIONS CTA SECTION ========== -->
+        <section class="page-hero py-20 text-center text-white reveal border-t border-gray-100">
+          <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Ready to Start Your Journey?</h2>
+            <p class="text-lg text-gray-200 max-w-xl mx-auto mb-8">Applications are now open for the upcoming academic year. Take the first step toward your future.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="#" class="btn btn-gold rounded-sm">Enroll Now</a>
+              <a href="/contact.html" class="btn btn-outline-white rounded-sm">Contact Admissions</a>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/assets/official-logo.png" alt="PDM Logo" class="w-10 h-10 object-contain" onerror="this.src='/assets/logo.jpg'">
+                        <span class="text-white font-bold text-lg">PDM</span>
+                    </div>
+                    <p class="text-sm leading-relaxed text-white/60">
+                        Pambayang Dalubhasaan ng Marilao — Where Learning Meets Community Service.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/history.html">Our History</a></li>
+                        <li><a href="/courses.html">Programs</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Top Programs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/courses.html">BS Information Technology</a></li>
+                        <li><a href="/courses.html">BS Hospitality Management</a></li>
+                        <li><a href="/courses.html">BS Business Administration</a></li>
+                        <li><a href="/courses.html">BS Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>📍 Municipal Compound, Marilao, Bulacan</li>
+                        <li>📞 (044) 123-4567</li>
+                        <li>✉️ info@pdm.edu.ph</li>
+                        <li>🕐 Mon–Fri, 8:00 AM – 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-white/40">© 2026 Pambayang Dalubhasaan ng Marilao. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition" aria-label="Facebook">
+                        <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition" aria-label="Email">
+                        <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
