@@ -1,5 +1,7 @@
 # Pambayang Dalubhasaan ng Marilao School Website
 
+> **Disclaimer:** This project was primarily "vibe coded" alongside an AI coding assistant. While it follows professional architecture and design principles, it was built rapidly through natural language collaboration and rapid prototyping.
+
 ## 1. Project Overview
 
 The **Pambayang Dalubhasaan ng Marilao (PDM)** School Website is a modern, responsive, and user-friendly digital platform serving as the official online presence for the institution. Prior to this project, PDM operated without a centralized digital hub, leading to fragmented communication and difficulty in disseminating information.
