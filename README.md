@@ -27,17 +27,17 @@ Pambayang Dalubhasaan ng Marilao currently does not have an official website. Th
   - [x] Git & GitHub repository setup
   - [x] Professional README documentation
 
-- [] **Phase 2: Backend Development**
-  - [ ] Initialize Express.js server (`server/app.js`)
-  - [ ] Configure environment variables (`.env`)
-  - [ ] Set up basic routing for pages
-  - [ ] Implement middleware (static file serving)
+- [x] **Phase 2: Backend Development**
+  - [x] Initialize Express.js server (`server/app.js`)
+  - [x] Configure environment variables (`.env`)
+  - [x] Set up basic routing for pages
+  - [x] Implement middleware (static file serving)
 
-- [ ] **Phase 3: Frontend Implementation**
-  - [ ] Create layout template (Navbar & Footer)
-  - [ ] Build static pages (Home, History, About)
-  - [ ] Integrate Tailwind CSS for styling
-  - [ ] Implement responsive mobile navigation
+- [x] **Phase 3: Frontend Implementation**
+  - [x] Create layout template (Navbar & Footer)
+  - [x] Build static pages (Home, History, About)
+  - [x] Integrate Tailwind CSS for styling
+  - [x] Implement responsive mobile navigation
 
 - [ ] **Phase 4: Features & Logic**
   - [ ] Create dynamic Courses/News page
