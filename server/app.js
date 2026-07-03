@@ -13,6 +13,7 @@ const { notFound, errorHandler } = require('./middleware/errorHandler');
 
 // Import routes
 const pageRoutes = require('./routes/pages');
+const apiRoutes = require('./routes/api');
 
 // Initialize Express app
 const app = express();
@@ -34,6 +35,9 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // ========== ROUTES ==========
 
+// API routes
+app.use('/api', apiRoutes);
+
 // Page routes (clean URLs: /admissions, /courses, etc.)
 app.use('/', pageRoutes);
 
@@ -46,10 +50,15 @@ app.use(notFound);
 app.use(errorHandler);
 
 // ========== START SERVER ==========
-app.listen(PORT, () => {
-    console.log(`\n========================================`);
-    console.log(`  ${process.env.APP_NAME || 'PDM Web'}`);
-    console.log(`  Server running on http://localhost:${PORT}`);
-    console.log(`  Environment: ${process.env.NODE_ENV || 'development'}`);
-    console.log(`========================================\n`);
-});
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`\n========================================`);
+        console.log(`  ${process.env.APP_NAME || 'PDM Web'}`);
+        console.log(`  Server running on http://localhost:${PORT}`);
+        console.log(`  Environment: ${process.env.NODE_ENV || 'development'}`);
+        console.log(`========================================\n`);
+    });
+}
+
+// Export for Vercel and Supertest
+module.exports = app;

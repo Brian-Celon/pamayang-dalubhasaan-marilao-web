@@ -76,85 +76,14 @@
                 <div class="section-divider mx-auto"></div>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-                <!-- Course 1 -->
-                <div class="card card-accent-gold p-6 text-center">
-                    <div class="feature-icon feature-icon-brown mx-auto mb-4">💻</div>
-                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Information Technology</h3>
-                    <div class="course-badge course-badge-years mb-3">BSIT • 4 YEARS</div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Learn software development, networking, cybersecurity, and web development through hands-on real-world projects.
-                    </p>
-                </div>
-
-                <!-- Course 2 -->
-                <div class="card card-accent-maroon p-6 text-center">
-                    <div class="feature-icon feature-icon-maroon mx-auto mb-4">🖥️</div>
-                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Computer Science</h3>
-                    <div class="course-badge course-badge-years mb-3">BSCS • 4 YEARS</div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Deep study of algorithms, artificial intelligence, data structures, and systems programming for advanced computing careers.
-                    </p>
-                </div>
-
-                <!-- Course 3 -->
-                <div class="card card-accent-brown p-6 text-center">
-                    <div class="feature-icon feature-icon-gold mx-auto mb-4">🏨</div>
-                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Hospitality Management</h3>
-                    <div class="course-badge course-badge-years mb-3">BSHM • 4 YEARS</div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Prepares students for the hotel, restaurant, and tourism industry with a strong focus on service excellence and operations.
-                    </p>
-                </div>
-
-                <!-- Course 4 -->
-                <div class="card card-accent-gold p-6 text-center">
-                    <div class="feature-icon feature-icon-brown mx-auto mb-4">✈️</div>
-                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Tourism Management</h3>
-                    <div class="course-badge course-badge-years mb-3">BSTM • 4 YEARS</div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Study travel operations, tour guiding, and sustainable tourism for careers in the local and international tourism industry.
-                    </p>
-                </div>
-
-                <!-- Course 5 -->
-                <div class="card card-accent-maroon p-6 text-center">
-                    <div class="feature-icon feature-icon-maroon mx-auto mb-4">🗂️</div>
-                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Office Administration</h3>
-                    <div class="course-badge course-badge-years mb-3">BSOA • 4 YEARS</div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Training in administrative management, business communication, and office systems for the modern professional workplace.
-                    </p>
-                </div>
-
-                <!-- Course 6 -->
-                <div class="card card-accent-brown p-6 text-center">
-                    <div class="feature-icon feature-icon-gold mx-auto mb-4">👶</div>
-                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">Bachelor of Early Childhood Education</h3>
-                    <div class="course-badge course-badge-years mb-3">BECED • 4 YEARS</div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Develops future teachers for early childhood and elementary levels with a strong foundation in child development and pedagogy.
-                    </p>
-                </div>
-
-                <!-- Course 7 -->
-                <div class="card card-accent-gold p-6 text-center">
-                    <div class="feature-icon feature-icon-brown mx-auto mb-4">🔧</div>
-                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">Bachelor of Technology & Livelihood Education</h3>
-                    <div class="course-badge course-badge-years mb-3">BTLED • 4 YEARS</div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Trains educators to teach technology and livelihood subjects at the secondary level, combining theory with practical skills.
-                    </p>
-                </div>
-
-                <!-- Course 8 -->
-                <div class="card card-accent-maroon p-6 text-center">
-                    <div class="feature-icon feature-icon-maroon mx-auto mb-4">🚀</div>
-                    <h3 class="font-bold text-brown text-lg mb-2 font-serif">BS Entrepreneurship</h3>
-                    <div class="course-badge course-badge-years mb-3">BSENTREP • 4 YEARS</div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Covers business planning, innovation, and enterprise development for students who want to start and grow their own businesses.
-                    </p>
+            <div id="courses-container" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <!-- Loading State -->
+                <div class="col-span-full flex flex-col items-center justify-center py-12 text-gray-500">
+                    <svg class="animate-spin h-10 w-10 text-gold mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <p>Loading programs...</p>
                 </div>
             </div>
         </section>

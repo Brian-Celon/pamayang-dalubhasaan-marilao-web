@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "BS Information Technology",
+    "abbreviation": "BSIT",
+    "duration": "4 YEARS",
+    "description": "Learn software development, networking, cybersecurity, and web development through hands-on real-world projects.",
+    "icon": "💻",
+    "colorTheme": "gold"
+  },
+  {
+    "id": 2,
+    "title": "BS Computer Science",
+    "abbreviation": "BSCS",
+    "duration": "4 YEARS",
+    "description": "Deep study of algorithms, artificial intelligence, data structures, and systems programming for advanced computing careers.",
+    "icon": "🖥️",
+    "colorTheme": "maroon"
+  },
+  {
+    "id": 3,
+    "title": "BS Hospitality Management",
+    "abbreviation": "BSHM",
+    "duration": "4 YEARS",
+    "description": "Prepares students for the hotel, restaurant, and tourism industry with a strong focus on service excellence and operations.",
+    "icon": "🏨",
+    "colorTheme": "brown"
+  },
+  {
+    "id": 4,
+    "title": "BS Tourism Management",
+    "abbreviation": "BSTM",
+    "duration": "4 YEARS",
+    "description": "Study travel operations, tour guiding, and sustainable tourism for careers in the local and international tourism industry.",
+    "icon": "✈️",
+    "colorTheme": "gold"
+  },
+  {
+    "id": 5,
+    "title": "BS Office Administration",
+    "abbreviation": "BSOA",
+    "duration": "4 YEARS",
+    "description": "Training in administrative management, business communication, and office systems for the modern professional workplace.",
+    "icon": "🗂️",
+    "colorTheme": "maroon"
+  },
+  {
+    "id": 6,
+    "title": "Bachelor of Early Childhood Education",
+    "abbreviation": "BECED",
+    "duration": "4 YEARS",
+    "description": "Develops future teachers for early childhood and elementary levels with a strong foundation in child development and pedagogy.",
+    "icon": "👶",
+    "colorTheme": "brown"
+  },
+  {
+    "id": 7,
+    "title": "Bachelor of Technology & Livelihood Education",
+    "abbreviation": "BTLED",
+    "duration": "4 YEARS",
+    "description": "Trains educators to teach technology and livelihood subjects at the secondary level, combining theory with practical skills.",
+    "icon": "🔧",
+    "colorTheme": "gold"
+  },
+  {
+    "id": 8,
+    "title": "BS Entrepreneurship",
+    "abbreviation": "BSENTREP",
+    "duration": "4 YEARS",
+    "description": "Covers business planning, innovation, and enterprise development for students who want to start and grow their own businesses.",
+    "icon": "🚀",
+    "colorTheme": "maroon"
+  }
+]
